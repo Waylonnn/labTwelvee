@@ -50,7 +50,7 @@ public class  ReadingFiles {
                 System.out.println("File Path: " + file);
                 //Moving through file, reading, and printing each line of the selected file
                 while (reader.ready()) {
-                    rec = reader.readLine();
+                    rec += reader.readLine() + " ";
                     line++;
                     //Prints the line # and the contents of the line
                     System.out.printf("\nLine%4d: %-60s ", line, rec);
